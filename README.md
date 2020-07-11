@@ -1,6 +1,6 @@
 # Python Type Hint Checker
 
-Python Type Hint Checker is a Python library for parsing type hinting (PEP 484). 
+Python Type Hint Checker is a Python library for parsing type hinting (PEP 484) 
 
 ### Motivation
 
@@ -20,7 +20,7 @@ import typing
 from python_type_hint_checker.utils import istype
 
 istype([1, 2, 3], typing.List[int])             # returns True
-istype({"foo": "bar"}, typing.List[str, int])   # returns False
+istype({"foo": "bar"}, typing.Dict[str, int])   # returns False
 ``` 
 
 Or use decorator to validate function type hints
@@ -53,8 +53,11 @@ pytest
 ## Roadmap
 
 [ ] complete most common types
+
 [ ] complete decorator
+
 [ ] cover code with tests (100%)
+
 [ ] release to PyPi
 ...
 
